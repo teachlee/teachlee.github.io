@@ -1,0 +1,88 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+  header, nav, main, footer {
+    font-family: "stempel+garamond+LT+Std";
+    text-align: center;
+    }
+
+  header{
+     background-color: #352F97;
+      height: 120%;
+      border-bottom: 2px Solid #000000;
+      
+  }
+  header h1 {
+   font-family: 'tangerine', serif; 
+    width: 100%;
+    position: relative;
+    left: 20px;
+    font-size: 40px;
+    color: #ffffff;
+      }
+
+  header div.subheading {
+    text-align: left;
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+  }
+
+  nav {
+    background-color: #352f97;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul {
+    list-style-type: none;
+  }
+
+  nav ul li {
+    font-size: 20px;
+    display: inline-block;
+    margin: 10px;
+  }
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+  }
+  /* nav button { display:none; }   hamburger button does not need to be shown */
+  main picture img {
+    position: relative;
+    right: 35%;
+  }
+
+  section.forecast {
+    display: inherit;
+    border-top: 2px solid #000000;
+  }  /* show the 10-day forecast with the medium view and up */
+  table {
+    margin: auto;
+    margin-bottom: 16px;
+  }
+
+  th {
+    background-color: #563ee3;
+    color: #ffffff
+  }
+
+  table, th, td {
+    border: 1px solid #000000;
+  }
+
+  p.town-article {
+    text-align:left;
+  }
+
+  article p.town-article img {
+    width: 62.666%;
+    float:right;
+    height: 62.666%;
+    padding-right: 16px;
+  }  /* responsive images */
+
+
+
+}
+
+

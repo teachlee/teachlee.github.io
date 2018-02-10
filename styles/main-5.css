@@ -1,0 +1,168 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+  box-sizing: border-box;
+
+}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 20px;
+  border: 2px solid #000000;
+  max-width: 100%;
+  margin: 0;
+}
+
+header, nav, main, footer {
+  text-align: center;
+    font-family: 'roboto', sans-serif;
+  
+  
+  /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+ 
+  background-color: #red;
+  height: 70px;
+  border-bottom: 2px solid #000000;
+}
+
+header h1 {
+  width: 100%;
+  color: #ffffff;
+  padding-bottom: 5px;
+  margin: auto;
+    font-family: 'tangerine', serif;
+  
+ }
+
+header img {
+  width: 75px;
+  height: 75px;
+  float: left;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
+header .subheading {
+  color: #ffffff;
+  padding: 0;
+  margin: auto;
+}
+
+nav {
+  margin:auto;
+  border-bottom: 2px solid #000000;
+}
+/* nav button {} */
+nav ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #352f97;
+}
+
+nav ul li {
+  background-color: #063059;
+  font-size: 30px;
+  display: block;
+  margin: 10px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 2px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav ul li.active a {
+    color: #000000;
+    background-color: #716DBD;
+}
+
+nav ul li a:hover {
+    color: #000000;
+    background-color: #718AB2;
+}
+
+
+main h2 {
+    margin: 1px;
+    font-size: 30px;
+   
+      
+}
+main picture {
+  margin: 250px;
+  max-width: 200%;
+    text-align: center;
+}
+
+main picture img {
+  width: 100%;
+    
+
+}
+
+main .Currentweather {
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 1px
+}
+
+main ul {
+    list-style-type: none;
+    font-size: 30px;
+    padding-bottom: .5px
+}
+main picture img {
+   position: relative;
+    right: 40%;
+   
+}
+section.forecast {
+   border-bottom: 2px solid #000000;
+    display: none;
+}
+article {
+  margin: auto;
+  width: 100%;
+ }
+
+article h2 {
+    text-align: center;
+}
+
+p.town-article {
+    text-align: left;
+ }
+
+p.display {
+    text-align: center;
+}
+
+article h2 img {
+      width: 50%;     
+    /* fill the page in the small/phone view */
+      max-height: 50%;
+}
+
+footer {
+    font-size: smaller;
+    background-color: #352f97;
+    color: #ffffff;
+    height: 100px;
+    padding: 5px;
+    padding-bottom: 5px;
+}
+
+footer aside {
+  text-align: center;
+}
+
+

@@ -8,32 +8,20 @@
 
 
   main figure {
-    margin: 0 ;
-    width:100%;
-    align-content: center;
-    
-
-  }
+      }
 
   main img {
-   
-    Margin-top: 5rem;
-    Margin-left: 5rem;
-    Padding: 0;
-    width: 50%;
-    
+      position: relative;
+          right: 43%;
   }
 
   article {
     width: 50%;
-    text-align: left;
+    padding: 0;
   }
-    article h3 {
-        font-family: 'tangerine', serif;
-    }
    
   article p.town-article img {
-  width: 100%;
+  width: 29.333%;
     
       
   }

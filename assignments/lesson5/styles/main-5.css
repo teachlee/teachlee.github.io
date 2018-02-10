@@ -1,8 +1,9 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* {
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+* { 
   box-sizing: border-box;
-
 }  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
@@ -14,9 +15,7 @@ body {
 
 header, nav, main, footer {
   text-align: center;
-    font-family: 'roboto', sans-serif;
-  
-  
+   
   /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
@@ -29,13 +28,18 @@ header {
 }
 
 header h1 {
-  width: 100%;
+  width: 300px;
   color: #ffffff;
   padding-bottom: 5px;
   margin: auto;
-    font-family: 'tangerine', serif;
-  
- }
+    font-family: 'Roboto', serif; }
+
+header h3 {
+width: 300px;
+  color: #ffffff;
+  padding-bottom: 5px;
+  margin: auto;
+    font-family: 'Roboto', serif; }
 
 header img {
   width: 50px;
@@ -91,9 +95,7 @@ nav ul li a:hover {
 
 main h2 {
     margin: 1px;
-    font-size: 30px;
-   
-      
+    font-size: 30px;      
 }
 main picture {
   margin: 250px;
@@ -103,8 +105,8 @@ main picture {
 
 main picture img {
   width: 100%;
-    
-
+position: relative;
+    right: 40%;
 }
 
 main .Currentweather {
@@ -120,11 +122,6 @@ main ul {
     font-size: 30px;
     padding-bottom: .5px
 }
-main picture img {
-   position: relative;
-    right: 40%;
-   
-}
 section.forecast {
    border-bottom: 2px solid #000000;
     display: none;
@@ -138,16 +135,18 @@ article h2 {
     text-align: center;
 }
 
-p.town-article {
+h3 {
     text-align: left;
+    font-size: 1.7em;
+    font-family: "Roboto", serif;
  }
 
 p.display {
     text-align: center;
 }
 
-article h2 img {
-      width: 50%;     
+article img {
+      width: 150%; height: 150%;     
     /* fill the page in the small/phone view */
       max-height: 50%;
 }

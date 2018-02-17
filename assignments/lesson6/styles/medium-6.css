@@ -1,0 +1,53 @@
+@media only screen and (min-width: 600px) {
+  .display-small {
+    display: none;
+  }
+  .display-medium {
+    display: block;
+  }
+  .display-large {
+    display: none;
+  }   
+  .title {
+    font-size: 2.4em;
+  }
+  .subtitle {
+    font-size: 1.8em;
+  }  
+
+  nav button {
+    display: none;
+  }
+
+  nav ul li {
+    float: left;
+  }
+
+  nav ul li a {
+    color: #ffffff;
+    border: none;
+    border-right: 1px;
+    padding: 14px 14px;
+  }
+
+  nav ul.hide {
+    display: block;
+  }
+
+  .weather-info {
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
+  }
+
+  .forecast { 
+    display: block; 
+  }
+
+  .article-image {
+    width: 50%;
+    float: right;
+    margin-left: 0.5em;
+  }
+
+}

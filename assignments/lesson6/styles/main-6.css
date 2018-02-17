@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
+@import url(https://fonts.googleapis.com/css?family=Stempel+Garamond);
+
+* { 
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  background-color: #ffffff;
+  color: #352f97;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.3em;
+  background-color: #ffffff;
+  color: #352f97
+}
+
+p {
+  font-weight: normal;
+  font-size: 1.1em;
+  background-color: #ffffff;
+  color: #352f97;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Stempel+Garamond', sans-serif;
+    text-align: left
+}
+
+header, nav, main, footer { 
+  margin: auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  max-width: 1200px;
+}
+
+.display-small {
+  display: block;
+}
+.display-medium {
+  display: none;
+}
+.display-large {
+  display: none;
+}
+.inline-block {
+  display: inline-block;
+}
+.align-middle {
+  vertical-align: middle;
+}
+.align-center {
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.8em;
+}
+.subtitle {
+
+  font-family: 'Egyptian+slate', san sans-serif;
+  font-size: 0.9em;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+nav {
+  width: 100%;
+}
+
+nav div {
+  background-color: #352f97;
+}
+
+nav button {
+  margin-left: 0.2em;
+  color: #352f97;
+  font-size: 2.75em;
+  border: none;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: #352f97;
+  padding: 1em;
+  margin: 0;
+  overflow: hidden;
+}
+
+nav ul li a {
+
+background-color: #352f97;
+  color: #000000
+}
+
+nav ul li.active a {
+    color: #718ab2;
+    background-color: #000000;
+   
+}
+nav ul li a:hover {
+    color: #000000;
+    background-color: #718AB2; 
+}
+
+nav ul.hide {
+  display: none;
+}
+
+.weather-group {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.weather-info {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+
+}
+
+#city-name {
+  font-size: 3em;
+}
+.franlkin {
+    display: none;
+}
+.weather-block #main-image {
+  width: 100%;
+  height: auto;
+}
+
+.weather-block #weather-desc {
+  font-family: 'Stempel+Garamond', serif;
+  font-size: 1.5em;
+}
+
+.weather-block #weather-image {
+  width: 100px;
+  height: 100px !important;
+  vertical-align: middle;
+}
+
+.weather-data {
+  display: block;
+}
+
+.forecast {
+  display: none;
+  margin-top: 15px;
+  margin-bottom: 16px;
+}
+
+.forecast h3 {
+  border-style: solid solid none solid;
+  text-align: center;
+  border-width: 1px;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0.5em;
+  background-color: #357f97;
+}
+
+.forecast table {
+  border: 1px;
+  width: 100%;
+  text-align: center;
+}
+
+.forecast table th  {
+  border: 1px solid;
+  padding: 4px;
+  background-color: #352f97;
+    border-bottom: #ffffff;
+}
+
+.article-picture {
+  width: 100%;
+  float: left;
+}
+
+article {
+  border: 1px solid;
+  margin-top: 0.5em;
+  padding: 1em;
+}
+
+article h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+article p {
+  margin-bottom: 0;
+}
+
+
+footer {
+  margin-top: 0.4em;
+  text-align: center;
+  font-size: 0.8em;
+}
+footer aside {
+  background-color: #352f97;
+  padding: 0.5em;
+  color: #ffffff;
+}
+footer aside span {
+  font-weight: bold;
+}
+footer>p {
+  margin-top: 0;
+  padding: 0.5em;
+  background-color: #352f97;
+  color: #ffffff;
+}

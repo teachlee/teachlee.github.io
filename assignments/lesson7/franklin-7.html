@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin City  \ The Weather Alert</title>
+  <meta name="author" content="Gail Lee">
+  <meta name="description" content="A weather page for Franklin City">
+    
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="styles/main-7.css" rel="stylesheet">    
+  <link href="styles/medium-7.css" rel="stylesheet">    
+  <link href="styles/large-7.css" rel="stylesheet">  
+</head>
+<body>
+
+  <header>
+      
+    <div class="header-container">
+       <div>
+        <img class="display-small" src="images/weatherlogo-small.jpg" alt="The site logo">  
+        <img class="display-medium" src="images/weatherlogo-medium.jpg" alt="The site logo"> 
+        <img class="display-large" src="/assignments/lesson7/images/weatherlogo-large.jpg" alt="The site logo"> 
+      </div>
+        <div>
+            <h1 class="title">Franklin City - The Weather Alert</h1>
+            <h3 class="subtitle">Acccurate and up to date weather on any device!</h3>
+        </div>
+      </div>
+  </header>
+    
+<nav>   
+     <div>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">Franklin</a></li>
+          <li><a href="#">Greenville</a></li>
+          <li><a href="#">Springfield</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="Gallery-7.html">Gallery</a></li>
+      </ul>   
+    </div>
+  </nav>
+    
+  <main>
+    <div class="weather-contrainer">
+        <div class="weather-Inage">
+        <picture>
+          <source srcset="images/franklin-small.jpg" media="(max-width: 500px)">
+          <source srcset="images/franklin-medium.jpg" media="(max-width: 824px)">
+          <source srcset="images/franklin-large.jpg">
+          <img src="images/franklin-large.jpg" id="main-image" alt="Franklin image">
+        </picture>
+      </div>
+         <h3>Franklin Weather Data</h3>
+      <div class="weather-group">
+       
+          <br>
+          <br>
+        <div class="weather-block">
+            <div class="weather-desc">Sunny</div>
+             <div class="weather-icon-container">
+            <img src="/assignments/lesson7/images/sunny.jpg" class="weather-icon" alt="Weather icon">
+          </div>
+            </div>
+        <div class="temperature">
+          High:
+          &nbsp;<span id="high-temp"></span>&deg;F
+          <br>
+          Low:
+          &nbsp;<span id="low-temp"></span>&deg;F
+        </div>
+        <div class="precip-wind">
+          Precipitation: 
+          &nbsp;<span id="precipitation"></span>%
+          <br>
+          Wind Speed:
+          &nbsp;<span id="wind-speed"></span> mph
+          &nbsp;<span id="wind-direction"></span>
+          <br>
+          Chill Factor:
+          &nbsp;<span id="chill-factor"></span>&deg;F
+        </div>
+      </div>
+    </div>
+            
+        
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+        </thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Franklin Breaks Record</h3> 
+        <div class="article-image">
+            <img class="article-picture" src="images/buildings.jpg" alt="article photo"> 
+        </div>
+           <h2> While the summer of 1936 was known for its prolonged heat and drought, arguably the hottest single day in Franlkin's history occurred several years earlier.  The high temperatures July 28, 1930 nearly everyone saw readings above 100 degrees and all-time high temperature records set that day. July and August of 1930 were extremely hot. </h2>
+	
+    </article>      
+  </main>
+    
+  <footer>
+    <aside>
+      <span>The Weather Alert</span><br>
+      123 Main St.<br>
+      Franklin, MU 83454<br>
+      (999) 999-9999<br>
+      contact@theurl.com<br>
+    </aside>
+    <p class="footer-area">
+      &copy;2018  All Rights Reserved  &bull; The Weather Alert &bull; <span id="current-date"></span>
+      </p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/windchill.js"></script>
+
+
+</body>
+</html>

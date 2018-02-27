@@ -83,7 +83,7 @@ header, nav, main, footer {
 
 
 nav {
-  width: 100%;
+  width: auto;
 }
 
 nav div {
@@ -156,8 +156,9 @@ nav ul.hide {
   margin: auto;
 }
 .weather-group {
- margin-left: 25em;
-
+ display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .main-title {

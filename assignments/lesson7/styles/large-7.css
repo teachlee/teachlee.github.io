@@ -18,11 +18,14 @@
   nav ul li a {
     font-size: 1.2em;
   }
-
-  .weather-goup {
+.main-image [
+    width: 1.2em;
+    ]
+  .weather-group {
     display: inline-flex;
     width: 100%;
-    vertical-align: middle;
+   align-items: center;
+      
   }
 
   .weather-block {
@@ -46,6 +49,6 @@
   }
 
   .gallery-grid img:hover {
-    box-shadow: 5px 5px 10px gray;
+    box-shadow: 5px 5px 10px #000000;
   }
 }

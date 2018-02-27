@@ -14,19 +14,20 @@
   .subtitle {
     font-size: 1.8em;
   }  
-
-nav div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
- 
+    nav div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        }
   nav button {
     display: none;
   }
+    Nav ul {
+        flex-direction: row;
+    }
 
   nav ul li {
-    float: left;
+      line-height: 1em;
   }
 
   nav ul li a {
@@ -34,39 +35,38 @@ nav div {
     border: none;
     border-right: 1px;
     padding: 14px 14px;
+      text-align: center;
   }
 
   nav ul.hide {
     display: flex;
   }
 
-   .main-image {
-    width: 50%;
-  }
-
+    .main-image {
+        width: 50%;
+        
+    }
   .weather-group {
-    width: 50%;
-  }
+    width: 100%;
+     }
 
   .forecast { 
     display: block; 
   }
 
-  article {
-    flex-direction: row-reverse;
-  }
-
+    .article {
+        flex-direction: row-reverse;
+        
+    }
   .article-image {
     width: 50%;
-  }
-
-  article p {
+     }
+    .article p {
     width: 50%;
     margin-bottom: 0;
-  }
-
-  .gallery-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+  }   
 }

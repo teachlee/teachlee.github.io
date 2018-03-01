@@ -18,13 +18,14 @@
   nav ul li a {
     font-size: 1.2em;
   }
-.main-image [
-    width: 1.2em;
-    ]
-  .weather-group {
-    display: inline-flex;
+    .main-image {
     width: 100%;
-   align-items: center;
+    }
+  .weather-group {
+    display: flex;
+        flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
       
   }
 

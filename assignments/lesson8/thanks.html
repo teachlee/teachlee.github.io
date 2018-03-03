@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin City  \ The Weather Alert</title>
+  <meta name="author" content="Gail Lee">
+  <meta name="description" content="A weather page for Franklin City">
+    
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="styles/main-8.css" rel="stylesheet">    
+  <link href="styles/medium-8.css" rel="stylesheet">    
+  <link href="styles/large-8.css" rel="stylesheet">  
+</head>
+<body>
+
+  <header>
+      
+    <div class="header-container">
+       <div>
+        <img class="display-small" src="images/weatherlogo-small.jpg" alt="The site logo">  
+        <img class="display-medium" src="/images/weatherlogo-Medium.jpg" alt="The site logo"> 
+        <img class="display-large" src="images/weatherlogo-large.jpg" alt="The site logo"> 
+           
+      </div>
+        <div>
+            <h1 class="title">Franklin City - The Weather Alert</h1>
+            <h3 class="subtitle">Acccurate and up to date weather on any device!</h3>
+        </div>
+      </div>
+  </header>
+    
+<nav>   
+     <div>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="#">Home</a></li>
+          <li><a href="franklin-8.html">Franklin</a></li>
+          <li><a href="#">Greenville</a></li>
+          <li><a href="#">Springfield</a></li>
+          <li><a href="stormcenter-8.html">Storm Center</a></li>
+          <li><a href="gallery-8.html">Gallery</a></li>
+      </ul>   
+    </div>
+  </nav>
+        <main>
+        <h1 class="main-title">Thank You!</h1>
+        <p class="appreciate">We appreciate you informing the public about the storm in your area. If you are in danger please go to a safe place.</p>
+        <p class="appreciate">Keeping you safe is our goal!</p>
+        </main>
+        <br>
+      
+     <footer>
+    <aside>
+      <span>The Weather Alert</span><br>
+      123 Main St.<br>
+      Franklin, MU 83454<br>
+      (999) 999-9999<br>
+      contact@theurl.com<br>
+    </aside>
+    <p class="footer-area">
+      &copy;2018  All Rights Reserved  &bull; The Weather Alert &bull; <span id="current-date"></span>
+      </p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+ <script src="scripts/stormcenter.js"></script>
+
+
+
+</body>
+</html>

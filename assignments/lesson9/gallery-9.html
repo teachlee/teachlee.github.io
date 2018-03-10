@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+
+<title>Gallery</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="A collection of pcitures for Franklin City">
+
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="/assignments/lesson9/styles/main-9.css" rel="stylesheet">    
+  <link href="/assignments/lesson9/styles/medium-9.css" rel="stylesheet">    
+  <link href="/assignments/lesson9/styles/large-9.css" rel="stylesheet"> 
+    
+</head>
+<body>
+ <header>
+
+    
+    <div class="header-container">
+        <div>
+        <img class="display-small" src="images/weatherlogo-small.jpg" alt="The site logo">  
+        <img class="display-medium" src="images/weatherlogo-medium.jpg" alt="The site logo"> 
+        <img class="display-large" src="images/weatherlogo-large.jpg" alt="The site logo"> 
+      </div>
+        <div>
+            <h1 class="title">Franklin City - The Weather Alert</h1>
+        <h3 class="subtitle">Acccurate and up to date weather on any device!</h3>
+      </div>
+    </div>
+  
+  </header>
+
+    <nav>
+    <div>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+          
+        <li><a href="/assignments/lesson9/index.html">Home</a></li>
+        <li><a href="/assignments/lesson9/franklin-9.html">Franklin</a></li>
+        <li><a href="#">Greenville</a></li>
+        <li><a href="#">Springfield</a></li>
+        <li><a href="/assignments/lesson9/stormcenter-9.html">Storm Center</a></li>
+        <li class="active"><a href="#">Gallery</a></li>
+      </ul>   
+    </div>
+  </nav>
+    
+
+<main>
+<h2 class="main-title">Gallery</h2>
+<div class="gallery-grid">
+    <figure>
+        <img src="/assignments/lesson7/images/photo1.jpg" alt=":Weather Image 1">
+        <figcaption>This is a picture of Frankfort Weather with a picture perferct sky with lots of colors</figcaption>
+    </figure>
+    
+    <figure>
+    <img src="/assignments/lesson7/images/photo2.jpg" alt="Weather Image 2">
+        <figcaption>This is a picture of Frankfort clouds dancing across the sky over the meadow</figcaption>
+     </figure> 
+    
+    <figure>
+     <img src="/assignments/lesson7/images/photo3.jpg" alt="Weather Image 3">
+    <figcaption>This is a picture of Franklin Weather with lighting all comng out of the stormy clouds</figcaption>
+    </figure>
+    
+    <figure>
+     <img src="/assignments/lesson7/images/photo4.jpg" alt="Weather Image 4">
+    <figcaption>This is a picture of Frankfort Weather with a giant cloud looking down on the grass</figcaption>
+    </figure>
+    
+    <figure>
+    <img src="/assignments/lesson7/images/photo5.jpg" alt="Weather Image 5">
+    <figcaption>This is a picture of Frankfort Weather with clouds in the Valley</figcaption>
+    </figure>
+    
+    <figure>
+    <img src="/assignments/lesson7/images/Photo6.jpg" alt="Weather Image 6">
+    <figcaption>This is a picture of Frankfort Weather with snow coming down Main Street</figcaption>
+  </figure>
+    </div>
+</main>
+
+ <footer>
+    <aside>
+      <span>The Weather Alert</span><br>
+      123 Main St.<br>
+      Franklin, MU 83454<br>
+      (999) 999-9999<br>
+      contact@theurl.com<br>
+    </aside>
+    <p class="footer-area">
+      &copy;2018  All Rights Reserved  &bull; The Weather Alert &bull; <span id="current-date"></span>
+      </p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+</html>

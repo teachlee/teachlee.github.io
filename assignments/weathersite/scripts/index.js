@@ -17,7 +17,7 @@
     for (var i = 0; i < towns.length; i++) {
       if (towns[i].name === 'Placerton') continue;
       var myArticle = document.createElement('article');
-      var myH2 = document.createElement('h2');
+      var myH2 = document.createElement('h4');
       var myPara1 = document.createElement('h4');
       var myPara2 = document.createElement('h4');
       var myPara3 = document.createElement('h4');

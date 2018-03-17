@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin City  \ The Weather Alert</title>
+  <meta name="author" content="Gail Lee">
+  <meta name="description" content="A weather page for Franklin City">
+    
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="/assignments/weathersite/styles/main.css" rel="stylesheet">    
+  <link href="/assignments/weathersite/styles/medium.css" rel="stylesheet">    
+  <link href="/assignments/weathersite/styles/large.css" rel="stylesheet">  
+</head>
+<body>
+
+  <header>
+      
+    <div class="header-container">
+       <div>
+        <img class="display-small" src="images/weatherlogo-small.jpg" alt="The site logo">  
+        <img class="display-medium" src="/images/weatherlogo-Medium.jpg" alt="The site logo"> 
+        <img class="display-large" src="images/weatherlogo-large.jpg" alt="The site logo"> 
+           
+      </div>
+        <div>
+            <h1 class="title">Franklin City - The Weather Alert</h1>
+            <h3 class="subtitle">Acccurate and up to date weather on any device!</h3>
+        </div>
+      </div>
+  </header>
+    
+<nav>   
+     <div>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="/assignments/weathersite/index.html">Home</a></li>
+            <li><a href="/assignments/weathersite/franklin.html">Franklin</a></li>
+            <li><a href="/assignments/weathersite/greenville.html">Greenville</a></li>
+            <li><a href="/assignments/weathersite/springfield.html">Springfield</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="/assignments/weathersite/gallery.html">Gallery</a></li>
+      </ul>   
+    </div>
+  </nav>
+    
+ <main>
+            <h2 class="Main-title">Storm Center</h2>
+            <form action="thanks.html" name="weather" id="stormdata">
+            <fieldset>
+            <legend><span>PERSONAL INFORMATION</span></legend>
+                
+                <p class="must-have"> * is required</p>
+                <label><span>*FULL NAME:</span><input name="fullname" type="text" value="" placeholder="FULL NAME" pattern="[a-zA-Z -._]{5,99}" required></label>
+                <label><span>EMAIL:</span><input name="email" type="email" value="" placeholder="mystorm@yahoo.com"></label>
+                <label><span>*PHONE:</span><input name="phone" type="tel" value="" placeholder="0123456789" pattern="[0-9]{10}" required></label>
+                <label><span>*ZIP CODE:</span><input name="zipcode" type="number" placeholder="ZIPCODE" required></label>
+            </fieldset>
+            <fieldset>
+                <legend><span>STORM INFORMATION</span></legend>
+                <label class="stdate"><span>STORM DATE:</span><input name="date" type="date"></label>
+                <br>
+                <label class="info"><span>STORM TYPE:</span></label>
+                <input class="stinfo" type="text" name="stormType" list="storms">
+                <datalist id="storms">
+                    <option value="Tornado">
+                    <option value="Severe Thunderstorm">  
+                    <option value="Heavy Rain">
+                    <option value="Flooding">
+                    <option value="High Winds">
+                    <option value="Heavy Snow">
+                    <option value="Ice">  
+                </datalist>
+                <br>
+                <br>
+                <label class="info" for="severity"><span>SEVERITY (1 to 10)</span></label><input class="stinfo" type="range" id="severity" value="5" min="1" max="10" step="1" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)"><span id="severityvalue"> 5</span>
+                <br>
+                <label class="info"><span>STORM REGION:</span></label>
+                <input class="stinfo" type="text" name="stormRegion" list="regions" placeholder="SELECT REGION">
+                <datalist id="regions">
+                    <option value="Franklin">
+                    <option value="Greenville">    
+                    <option value="Springfield">
+                </datalist>
+                </fieldset>               
+                <fieldset>
+                <legend><span>TELL IF IN DANGER</span></legend>
+                <br>
+                <input class="stinfo" type="radio" name="UserInDanger" value="yes"> YES<br>
+                <input class="stinfo" type="radio" name="UserInDanger" value="maybe"> MAYBE<br>
+                <input class="stinfo" type="radio" name="UserInDanger" value="no"> NO<br>    
+                <br>
+                <textarea class="stinfo" rows="6" cols="30" name="comment" placeholder="Please provide any additional information in this box that might be relevant to the storm conditions you are experiencing."></textarea>
+                </fieldset>
+                <input type="submit" value="SUBMIT" class="submitBtn">
+        </form>
+        </main> 
+    
+  <footer>
+    <aside>
+      <span>The Weather Alert</span><br>
+      123 Main St.<br>
+      Franklin, MU 83454<br>
+      (999) 999-9999<br>
+      contact@theurl.com<br>
+    </aside>
+    <p class="footer-area">
+      &copy;2018  All Rights Reserved  &bull; The Weather Alert &bull; <span id="current-date"></span>
+      </p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+ <script src="scripts/stormcenter.js"></script>
+
+
+
+</body>
+</html>

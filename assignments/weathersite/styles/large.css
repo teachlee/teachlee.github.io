@@ -1,0 +1,62 @@
+@media only screen and (min-width: 1024px) {
+  .display-small {
+    display: none;
+  }
+  .display-medium {
+    display: none;
+  }
+  .display-large {
+    display: block;
+  }
+  .title {
+    font-size: 4.2em;
+  }
+  .subtitle {
+    font-size: 2.2em;
+  }   
+
+  nav ul li a {
+    font-size: 1.2em;
+  }
+    .main-image {
+    width: 95%;
+    }
+  .weather-group {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+      
+  }
+
+  .weather-block {
+    width: auto;
+  }
+
+  .temperature {
+    text-align: left;
+    width: auto;
+    padding-left: 3em;
+  }
+
+  .precip-wind {
+    text-align: left;
+    width: auto;
+    padding-left: 3em;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+#forecasttext {
+	text-align: center;
+    margin-left: 20em;
+    margin-right: 15em;
+    }
+Main section article {
+    display: table-cell;
+    flex-direction: column;
+    }
+}
+
+    

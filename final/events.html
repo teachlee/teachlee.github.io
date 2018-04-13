@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Events | The Mountain Spoke</title>
+  <meta name="author" content="Gail Lee">
+  <meta name="description" content="The Mountain Spoke is a fictitious retail store located.">
+  <link href="styles/normalize.css" rel="stylesheet"> 
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/medium.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <a href="index.html">
+    <img src="images/mountainspokelogolargel.jpg" alt="Logo">
+  </a>
+  <div>
+    <div class="title">The Mountain Spoke</div>
+    <div class="subtitle"> Happy Trails for you!</div>
+  </div>
+</header>
+
+<nav>
+  <button id="hamburgerBtn">&#9776;</button>
+  <ul id="primaryNav" class="hide">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="adventures-tours.html">Adventure Tours</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+     
+    
+      <h2>Events</h2>
+        
+      
+    <div class="eventssection"> 
+    
+    
+    <div id="continental">
+    
+      <h2>Cycle the Continental Divide!</h2
+          >  
+        
+      
+        <img src="images/bikemounton.jpg" alt="continental divide event">
+        
+    <p>
+        
+       <strong>Ride the longest off-pavement route in the world.</strong><br><br>
+The Great Divide Mountain Bike Route (GDMBR) is Adventure Cycling's premier off-pavement cycling route, crisscrossing the Continental Divide north to south. This route is defined by the word "remote." Its remoteness equates with spectacular terrain and scenery. The entire route is basically dirt-road and mountain-pass riding every day. In total, it has over 200,000 feet of elevation gain. Roughly 80% of it is composed of county, Forest Service (USFS), and Bureau of Land Management (BLM) dirt and gravel roads. The remainder is made up of four-wheel-drive tracks and singletrack trails (10%), and paved roads (10%).
+      </p>
+        
+        
+        
+ <table>
+ 
+ 
+ <tbody>
+  <tr>
+     <td class="firstcol">Date</td>
+     <td class="secondcol"> April 15th, 2018</td>
+  </tr>
+     
+     <tr>
+     <td class="firstcol">Length</td>
+     <td class="secondcol">4 day</td>
+     
+     
+  </tr>
+  <tr>
+     <td class="firstcol">Skill Level</td>
+     <td class="secondcol">Intermediate</td>
+     
+  </tr>
+  <tr>
+     <td class="firstcol">Cost</td>
+     <td class="secondcol">$850</td>
+     
+  </tr>
+  <tr>
+     <td class="firstcol">Location</td>
+     <td class="secondcol">Strawberry Lake</td>
+    
+  </tr>
+ 
+ 
+ </tbody>
+ <tfoot>
+  <tr>
+     
+     <td colspan="2">Fill out the form to sign up!</td>
+  </tr>
+ </tfoot>
+</table>
+    
+        
+
+  <div>
+    <h2>Registration Form</h2>
+    <form action="thanks-for-contact.html">
+      <div id="eventRegistration">
+        <fieldset>  
+          <label>
+            <span>Full Name:</span>
+            <input 
+              type="text"
+              name="fullname"
+              value=""
+              placeholder="Full Name"
+              title="Please provide full name"
+              pattern="[a-zA-Z -._]{5,99}" required
+            >
+          </label>
+          <label>
+            <span>Email:</span>
+            <input 
+              type="email"
+              name="email"
+              value=""
+              placeholder="person@demo.com"
+              title="Please provide email address"
+              required
+            >
+          </label>
+          <label>
+            <span>Phone:</span>
+            <input 
+              type="tel"
+              name="phonenumber"
+              value=""
+              placeholder="0155512345"
+              title="Please provide phone number"
+              pattern="[0-9]{10,20}" 
+              required
+            >
+          </label>
+            
+            
+        </fieldset>    
+        <fieldset>
+          <label>
+              
+              <span>Date of Birth:</span>
+                <input 
+                  type="date" 
+                   name="dateofbirth"
+                    title="Please provide date of birth"
+                    required
+                    >
+            </label>
+            
+            <label>
+            <span>Home State or Country:</span>
+            <input
+             type="text"
+              name="state or country"
+              value=""
+              placeholder="State or Counrty"
+              title="Please provide state or country"
+               pattern="[a-zA-Z -._]{5,99}" 
+                   required
+            >
+            
+          </label>
+          <label>
+            <span>Message:</span>
+            <textarea 
+              name="message"
+              cols="50"
+              rows="7"
+              placeholder="Please enter message."
+            ></textarea>
+          </label>
+        </fieldset>
+      </div>
+      <div id="eventRegistrationSubmit">
+        <input type="submit" class="submitBtn" value="Submit">
+        <input 
+          type="hidden"
+          value="Contact Form"
+          name="subject"
+        >
+      </div>
+    </form>
+  </div>
+      
+        </div>
+        </div> 
+    
+       
+</main>
+
+<footer>
+  <aside>
+    <span>The Mountain Spoke</span><br>
+    3950 Valley Commons Drive<br>
+    Bozeman, MT 59718<br>
+    (999) 999-9999<br>
+    contact@theurl.com<br>
+  </aside>
+  <p class="footer-bar">
+    &copy;2018 All Rights Reserved | 
+    The Mountain Spoke | 
+    <span id="currentdate"></span>
+  </p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="scripts/wayfinding.js"></script>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/countries-and-states.js"></script>
+<script src="scripts/events.js"></script>
+
+</body>
+
+</html>
+
+
+  

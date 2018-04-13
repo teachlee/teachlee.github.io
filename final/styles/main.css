@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=lobster);
 @import url(https://fonts.googleapis.com/css?family=cabin);
-@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah)
+
 
 * { 
   box-sizing: border-box;
@@ -94,7 +94,7 @@ footer p {
   font-size: 0.8em;
 }
 
-/*LAYOUT*/
+
 
 header {
   display: flex;

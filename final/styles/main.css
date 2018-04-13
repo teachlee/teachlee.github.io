@@ -704,3 +704,21 @@ input:required:valid, select:required:valid {
     padding: 0;
   }
 }
+
+
+video {
+  width: 100%;
+}
+
+#presentationVideo:link, #presentationVideo:visited {
+    background-color: #4424D6;
+    color: white;
+    padding: 10px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+#presentationVideo:hover, #presentationVideo:active {
+    background-color: #788740;
+}
